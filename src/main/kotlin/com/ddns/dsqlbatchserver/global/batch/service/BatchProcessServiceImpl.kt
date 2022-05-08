@@ -1,7 +1,7 @@
-package com.ddns.dsqlbatchserver.domain.batch.service
+package com.ddns.dsqlbatchserver.global.batch.service
 
-import com.ddns.dsqlbatchserver.domain.batch.data.entity.Post
-import com.ddns.dsqlbatchserver.domain.batch.data.entity.WritePost
+import com.ddns.dsqlbatchserver.global.batch.data.entity.Post
+import com.ddns.dsqlbatchserver.global.batch.data.entity.WritePost
 import com.ddns.dsqlbatchserver.domain.komoran.service.KomoranService
 import com.ddns.dsqlbatchserver.global.util.ContentTextParsingUtil
 import com.ddns.dsqlbatchserver.infra.alarm.AlarmService

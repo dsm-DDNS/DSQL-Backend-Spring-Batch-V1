@@ -1,4 +1,4 @@
-package com.ddns.dsqlbatchserver.domain.batch.data.dto
+package com.ddns.dsqlbatchserver.global.batch.data.dto
 
 
 class IsTrue(

@@ -1,4 +1,4 @@
-package com.ddns.dsqlbatchserver.domain.batch.data.entity
+package com.ddns.dsqlbatchserver.global.batch.data.entity
 
 
 class Tag(

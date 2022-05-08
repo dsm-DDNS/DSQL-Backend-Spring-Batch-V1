@@ -1,6 +1,6 @@
-package com.ddns.dsqlbatchserver.domain.batch.data.mapper
+package com.ddns.dsqlbatchserver.global.batch.data.mapper
 
-import com.ddns.dsqlbatchserver.domain.batch.data.dto.IsTrue
+import com.ddns.dsqlbatchserver.global.batch.data.dto.IsTrue
 import org.springframework.jdbc.core.RowMapper
 import java.sql.ResultSet
 
