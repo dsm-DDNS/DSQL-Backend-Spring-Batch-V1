@@ -1,13 +1,14 @@
 package com.ddns.dsqlbatchserver.global.env.config
 
-import com.ddns.dsqlbatchserver.domain.batch.data.entity.Post
-import com.ddns.dsqlbatchserver.domain.batch.data.entity.WritePost
-import com.ddns.dsqlbatchserver.domain.batch.data.mapper.IsTrueRowMapper
-import com.ddns.dsqlbatchserver.domain.batch.data.mapper.PostRowMapper
-import com.ddns.dsqlbatchserver.domain.batch.service.BatchProcessService
+import com.ddns.dsqlbatchserver.global.batch.data.entity.Post
+import com.ddns.dsqlbatchserver.global.batch.data.entity.WritePost
+import com.ddns.dsqlbatchserver.global.batch.data.mapper.IsTrueRowMapper
+import com.ddns.dsqlbatchserver.global.batch.data.mapper.PostRowMapper
+import com.ddns.dsqlbatchserver.global.batch.service.BatchProcessService
 import org.slf4j.LoggerFactory
 import org.springframework.batch.core.Job
 import org.springframework.batch.core.Step
+import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory
 import org.springframework.batch.core.launch.support.RunIdIncrementer
@@ -50,7 +51,6 @@ class JobConfiguration(
     fun dsqlDataProcessingJob(): Job {
         return jobBuilderFactory.get(JOB_NAME)
             .start(dsqlPostProcessingStep())
-            .incrementer(RunIdIncrementer())
             .build()
     }
 
