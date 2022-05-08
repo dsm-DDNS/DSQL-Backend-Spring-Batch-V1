@@ -6,6 +6,9 @@ spring:
     driver-class-name: ${db.default.driver}
   main:
     web-application-type: none
+  batch:
+    job:
+      enabled: false
 server:
   port: 0
 
@@ -20,6 +23,7 @@ datasource:
     url: ${db.write.url}
     user-name: ${db.write.username}
     password: ${db.write.pw}
+
 
 #logging.level.org.springframework.batch: DEBUG
 ncloud:
