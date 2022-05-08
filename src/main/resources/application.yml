@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: ${db.default.url}
+    username: ${db.default.username}
+    password: ${db.default.pw}
+    driver-class-name: ${db.default.driver}
+  main:
+    web-application-type: none
+server:
+  port: 0
+
+datasource:
+  read:
+    driver-class-name: ${db.read.driver}
+    url: ${db.read.url}
+    user-name: ${db.read.username}
+    password: ${db.read.pw}
+  write:
+    driver-class-name: ${db.write.driver}
+    url: ${db.write.url}
+    user-name: ${db.write.username}
+    password: ${db.write.pw}
+
+#logging.level.org.springframework.batch: DEBUG
+ncloud:
+  clientKey: ${ncloud.clientKey}
+  secretKey: ${ncloud.secretKey}
+
+tistory:
+  accessToken: ${tistory.accessToken}
+  blogName: ${tistory.blogname}
+
