@@ -4,10 +4,12 @@ import org.springframework.batch.core.configuration.annotation.EnableBatchProces
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan
 import org.springframework.boot.runApplication
+import org.springframework.scheduling.annotation.EnableScheduling
 
 @SpringBootApplication
-@EnableBatchProcessing
 @ConfigurationPropertiesScan
+@EnableScheduling
+@EnableBatchProcessing
 class DsqlBatchServerApplication
 
 fun main(args: Array<String>) {
